@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background: #303030;
+}
+
+.max-width{
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+/*button{ desativado
+    padding: 10px 20px;
+    background: #ce234f;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}*/
+
+button:hover{
+    border: 2px solid #ce234f;
+    background: none;
+    color: #ce234f;
+    font-weight: 900;
+}
+
+#home{
+    width: 100%;
+    height:auto;
+    background: url('imagens/18.jpg') no-repeat;
+    background-size:cover;
+}
+
+#home .logo img{
+    max-width: 40%;
+
+}
+
+#home .menu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .menu-responsivo nav{
+    position:fixed;
+    z-index: 999;
+}
+
+#home .menu-responsivo  nav button{
+    position:absolute;
+    right: 20px;
+    top: -20px;
+    border: none;
+    background: none;
+    font-size: 26px;
+    z-index: 999;
+    color: #fff;
+    text-shadow: 0 0 5px #303030;
+    cursor: pointer;
+}
+
+#home .menu-responsivo .menu-link{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    display: none;
+    background: #ce234f;
+    width: 250px;
+    height: 100vh;
+}
+
+#home .menu-responsivo .menu-link li{
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+  }
+
+#home .menu-responsivo .menu-link a{
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 60px;
+}
+
+#home .menu-responsivo .menu-link a:hover{
+    background: #4c7d9d;
+}
+
+#home .icons{
+    width: 100px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#home .icons .line{
+    width: 2px;
+    height: 200px;
+    background: #fff;
+}
+
+#home .icons a{
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#home .icons a:hover{
+    color: #ce234f;
+}
+
+#home .icons  i{
+    font-size: 1.5rem;
+}
+
+#home .call{
+    width: 50%;
+    height: 50%;
+    margin-left: 90px;
+}
+
+#home .call h1{
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+#home .call p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+
+#serviço{
+    background: #fff;
+}
+
+#serviço .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#serviço .title h1{
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+#serviço .container .service{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#serviço .service .box{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#serviço .service .box i{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#serviço .service .box h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#serviço .service .box p{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#serviço .title-service{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#serviço .title-service .line{
+    width: 75%;
+    height: 4px;
+    background: #ce234f;
+}
+
+#serviço .title-service h1{
+    padding: 0 3%;
+}
+
+#serviço .slider-container{
+    margin-top: 40px;
+}
+
+#serviço .slider-container img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+#serviço button:hover{
+    border: none;
+}
+
+#sobre{
+    background: #e2e4e5;
+}
+
+#sobre .container{
+    display: flex;
+    justify-content: space-around;
+    height:auto;
+}
+
+#sobre .container .image{
+    width: 20%;
+    height: auto;
+    margin-top: 40px;
+}
+
+#sobre .container .image img{
+    width: 350px;
+    object-fit: cover;
+}
+
+#sobre .container .text{
+    width: 60%;
+    height: 20vh;
+    margin-top: 40px;
+}
+
+#sobre .text h1{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+#sobre .text p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#sobre .text h5{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#sobre .text li{
+    margin-bottom: 20px;
+    list-style: circle;
+}
+
+#apresentação{
+    background: #fff;
+}
+
+#apresentação .container{
+    height: auto;
+}
+
+#apresentação .title{
+    padding: 15px 0;
+    display: flex;
+    align-content: center;
+}
+
+#apresentação .title h1{
+    padding: 0 3%;
+}
+
+#apresentação .title .line{
+    width: 75%;
+    height: 4px;
+    background: #ce234f;
+}
+
+#apresentação video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#planos{
+    background: #e2e4e5;
+}
+
+#planos .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#planos .container .title{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+}
+
+#planos .container .title .line{
+    width: 70%;
+    height: 4px;
+    background: #ce234f;
+}
+
+#planos .container .title h1{
+    padding: 0.3%;
+}
+
+#planos .content{
+    width: 100%;
+    height: auto;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#planos .content .box{
+    width: 20%;
+    height:auto;
+    background: #87b1cd;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+#planos .content .box h1{
+    margin-bottom: 25px;
+}
+
+#planos .content .box h2{
+    margin-bottom: 20px;
+    color: #ce234f;
+}
+
+#planos .content .box p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#planos .content .box li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+#planos .content .box li i{
+    color: #ce234f;
+}
+
+#planos .content .box button{
+    margin-top: 10px;
+}
+
+#contato{
+    background: url("imagens/13.jpg") no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+#contato .container .title{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+#contato .container .title .line{
+    width: 70%;
+    height: 4px;
+    background: #ce234f;
+}
+
+#contato .container .title h1{
+    padding: 0 3%;
+    color: #fff;
+}
+
+#contato .content form{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato .content form input[type=text]{
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+/*Desabilitado
+#contato .content form input[type=telefone]{
+    width: 490px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+}*/
+
+#contato .content form input[type=email]{
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#contato .content form textarea{
+    width: 400px;
+    height: 150px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#contato .content form input[type=submit]{
+    width: 400px;
+    height: 60px;
+    background: #ce234f;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.baseboard{
+    width: 100%;
+    height: 200px;
+    background: #17232e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 80px;
+}
+
+.baseboard .logo img{
+    width: 300px;
+}
+
+.baseboard .icons a{
+    color: #fff;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.baseboard .icons a:hover{
+    color: #ce234f;
+}
+
+.baseboard .text{
+    color: #fff;
+}
+
+.whatsapp-link{
+    position:fixed;
+    width:60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888 ;
+    z-index: 1000;
+}
+.fa-whatsapp{
+    margin-top: 16px;
+}
+
+
+@media screen and (max-width: 1200px){
+
+    #serviço .service .box i{
+font-size: 2.1rem;
+    }
+
+    #serviço .service .box h3{
+        font-size: 1rem;
+      }
+
+      #sobre .container .text{
+        width: 40%;
+      }
+
+
+}
+
+@media screen and (max-width: 960px){
+
+    #home{
+      background-position: center;
+    }
+
+    #home .icons  i{
+        font-size: 1rem;
+    }
+
+    #home .call{
+        width: 60%;
+    }
+    
+    #home .call h1{
+        font-size: 2.5rem;
+    }
+    
+    #home .call p{
+        font-size: 1rem;
+    }
+
+    #serviço .title h1{
+      font-size: 1.3rem;
+      
+    }
+
+    #serviço .title-service h1{
+ font-size: 1.2rem;
+    }
+    
+    #sobre .text h1{
+      
+        font-size: 1.3rem;
+  
+    }
+    
+    #sobre .text p{
+        font-size: 1rem;
+    
+    }
+    
+    #sobre .text h5{ 
+        font-size: 1rem;
+
+    }
+    
+    #sobre .text li{
+    font-size: 0.9rem;
+    }
+
+    #apresentação .title h1{
+        padding: 0 2%;
+        font-size: 1.2rem;
+    }
+
+    #planos .container .title h1{
+       font-size: 1.2rem;
+    }
+    
+
+    #planos .content .box h1{
+      font-size: 1.2rem;
+    }
+    
+    #planos .content .box h2{
+        font-size: 1.2rem;
+    }
+    
+    
+    #planos .content .box li{
+        font-size: 0.8rem;
+    }
+
+    #contato .container .title h1{
+      font-size: 1.2rem;
+    }
+
+
+    .baseboard{
+      top: 120px;
+      flex-wrap: wrap;
+      height: auto;
+    }
+    
+    .baseboard .logo img{
+        width: 250px;
+    }
+    
+    .baseboard .icons a{
+        font-size: 1.2rem;
+     
+    }
+
+    .baseboard .text{
+      font-size: 0.9rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 760px){
+
+    #serviço .container .service{
+     flex-wrap: wrap;
+    }
+
+    #serviço .container .service .box{
+      width: 300px;
+       }
+
+       #sobre .container{
+       flex-wrap: wrap;
+    }
+
+
+    #sobre .container .image{
+        width: 300px;
+       
+    }
+    
+    #sobre .container .image img{
+        width: 250px;
+   
+    }
+    
+    #sobre .container .text{
+        width: 400px;
+        height: auto;
+   
+    }
+    
+    #sobre .text h1{
+        margin-bottom: 10px;
+       
+    }
+    
+    #sobre .text p{
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+ 
+    #sobre .text li{
+        margin-bottom: 5px;
+     
+    }
+
+
+    #planos .content{
+       flex-wrap: wrap;
+    }
+    
+    #planos .content .box{
+        width: 300px;
+        height: 380px;
+      margin: 2% 0;
+    }
+
+
+
+
+    #contato .content form input[type=email]{
+        width: 70%;
+     
+    }
+
+    #contato .content form input[type=text]{
+        width: 70%;
+    }
+    
+    #contato .content form textarea{
+      width: 70%;
+    }
+    
+    #contato .content form input[type=submit]{
+        width: 70%;
+       
+    }
+
+        
+    .baseboard .logo,
+    .baseboard .icons,
+    .baseboard .text,
+    .baseboard .button{
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.baseboard .logo img{
+    height: 60px;
+    object-fit: cover;
+}
+}
+
+
+
+@media screen and (max-width: 810px){
+
+    #serviço .container .service{
+     flex-wrap: wrap;
+    }
+
+    #serviço .container .service .box{
+      width: 300px;
+       }
+
+       #sobre .container{
+       flex-wrap: wrap;
+    }
+
+
+    #sobre .container .image{
+        width: 300px;
+       
+    }
+    
+    #sobre .container .image img{
+        width: 250px;
+   
+    }
+    
+    #sobre .container .text{
+        width: 400px;
+        height: auto;
+   
+    }
+    
+    #sobre .text h1{
+        margin-bottom: 10px;
+       
+    }
+    
+    #sobre .text p{
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+ 
+    #sobre .text li{
+        margin-bottom: 5px;
+     
+    }
+
+
+    #planos .content{
+       flex-wrap: wrap;
+    }
+    
+    #planos .content .box{
+        width: 300px;
+        height: 380px;
+      margin: 2% 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1800px){
+
+    #serviço .container .service{
+     flex-wrap: wrap;
+    }
+
+    #serviço .container .service .box{
+      width: 300px;
+       }
+
+       #sobre .container{
+       flex-wrap: wrap;
+    }
+
+
+    #sobre .container .image{
+        width: 300px;
+       
+    }
+    
+    #sobre .container .image img{
+        width: 250px;
+   
+    }
+    
+    #sobre .container .text{
+        width: 400px;
+        height: auto;
+   
+    }
+    
+    #sobre .text h1{
+        margin-bottom: 10px;
+       
+    }
+    
+    #sobre .text p{
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+ 
+    #sobre .text li{
+        margin-bottom: 5px;
+     
+    }
+
+
+    #planos .content{
+       flex-wrap: wrap;
+    }
+    
+    #planos .content .box{
+        width: 300px;
+        height: 380px;
+      margin: 2% 0;
+    }
+
+}
